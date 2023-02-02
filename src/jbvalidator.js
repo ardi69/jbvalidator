@@ -378,7 +378,8 @@
                     }
                 }
                 return '';
-            }
+            },
+            
             match: function (el) {
                 if (hasAttr(el, 'data-v-match')) {
                     let re = new RegExp($(el).data('vMatch'));
