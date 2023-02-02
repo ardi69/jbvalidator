@@ -383,7 +383,7 @@
             match: function (el) {
                 if (hasAttr(el, 'data-v-match')) {
                     let re = new RegExp($(el).data('vMatch'));
-                    if (!re.match($(el).val()) {
+                    if (!re.match($(el).val())) {
                         return hasAttr(el, 'data-v-match-error')  ? $(el).data('vMatchError') : "Eingabe ist falsch.";
                     }
                 }
